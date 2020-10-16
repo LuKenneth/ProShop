@@ -2,7 +2,7 @@ import React from 'react';
 import { Alert } from 'react-bootstrap';
 
 interface Props {
-  variant: string;
+  variant?: string;
   children: any;
 }
 
