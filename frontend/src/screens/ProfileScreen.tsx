@@ -39,6 +39,7 @@ const ProfileScreen: React.FC<Props> = ({ history }) => {
         setEmail(user.email);
       }
     }
+    // eslint-disable-next-line
   }, [dispatch, history, userInfo, userDetails]);
 
   const submitHandler = (e: any) => {
