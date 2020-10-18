@@ -12,6 +12,8 @@ interface Props {
 const PlaceOrderScreen: React.FC<Props> = ({ history }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state: any) => state.cart);
+  const userDetails = useSelector((state: any) => state.userDetails);
+  const { user } = userDetails;
   const orderCreate = useSelector((state: any) => state.orderCreate);
   const { order, success, error } = orderCreate;
 
@@ -34,6 +36,7 @@ const PlaceOrderScreen: React.FC<Props> = ({ history }) => {
   const placeOrderHandler = () => {
     dispatch(
       createOrder({
+        user: user,
         orderItems: cart.cartItems,
         shippingAddress: cart.shippingAddress,
         paymentMethod: cart.paymentMethod,
