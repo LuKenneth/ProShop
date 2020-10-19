@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <Header></Header>
-      <main className="py3">
+      <main className="py-3">
         <Container>
           <Route path="/placeOrder" component={PlaceOrderScreen}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
