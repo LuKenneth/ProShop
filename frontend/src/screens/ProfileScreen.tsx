@@ -141,7 +141,7 @@ const ProfileScreen: React.FC<Props> = ({ history }) => {
                       )}
                     </td>
                     <td>
-                      {order.isDelivered ? (
+                      {order.delivered ? (
                         order.deliveredAt.substring(0, 10)
                       ) : (
                         <i
