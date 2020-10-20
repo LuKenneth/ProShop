@@ -1,5 +1,8 @@
 # ProShop
-https://propshop-lukenneth.herokuapp.com/
+
+https://proshop-lukenneth.herokuapp.com/
+
+MongoDB | Express | React & Redux | Node
 
 Full featured shopping cart
 
